@@ -1,0 +1,423 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 2500px;
+  perspective: 700px;
+}
+/* .......................[Header]........................... */
+.container {
+  width: 81%;
+  margin: auto;
+}
+.menu-bar{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0%;
+}
+.camera{
+  font-size: 30px;
+}
+.logo{
+  color: rgb(2, 2, 2);
+  font-size: 30px;
+}
+.logo span{
+  color: rgb(181, 116, 32);
+}
+nav{
+  margin: 0px 216px;
+}
+.menu-bar ul{
+  list-style: none;
+  display: flex;
+}
+.menu-bar ul li{
+  padding: 10px 30px;
+  position: relative;
+}
+.menu-bar ul li a{
+  color: rgb(10, 11, 11);
+  text-decoration: none;
+  font-size: 20px;
+  transition: all .3s;
+}
+.menu-bar ul li a:hover{
+  color: rgb(56, 52, 48);
+}
+.drop-menu{
+  display: none;
+}
+.menu-bar ul li:hover .drop-menu{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+.drop-menu ul{
+  display: block;
+  margin: 10px;
+}
+.drop-menu ul li{
+  width: 84px;
+  padding: 5px;
+}
+li:hover {
+  background-image: url(../img/button.jpg);
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: drop-menu 300ms ease-out;
+  text-shadow: 0 -1px 0 #0c0a0a;
+}
+li:active {
+  transform: translateY(4px);
+}
+@keyframes drop-menu {
+  15% {
+    transform: scale(1.2, 1.1);
+  }
+  40% {
+    transform: scale(0.95, 0.95);
+  }
+  75% {
+    transform: scale(1.05, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.icoon{
+  margin: -59px 10px;
+  float: right;
+}
+/* ........................[Main]............................... */
+.hero{
+  width: 81%;
+  margin: auto;
+  height: calc(100vh - 80px);
+  background-image: url(../img/flat-design-world-photography-day_23-2148570880.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* .........................[Category]...................... */
+.category{
+  padding: 40px 0px;
+}
+.title{
+  text-align: center;
+  padding: 20px 0px;
+}
+h2{
+  margin-bottom: 8px;
+  font-size: 27px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.line{
+  height: 2px;
+  width: 90px;
+  background-color: rgb(235, 145, 9);
+  margin: auto;
+  transition: width .5s;
+}
+.title:hover .line{
+  width: 120px;
+}
+.container1 {
+  width: 80%;
+  height: 125vh;
+  margin: auto;
+  margin-top: 10px;
+}
+.items{
+  display: flex;
+  justify-content: space-between;
+}
+.item{
+  height: 370px;
+  width: 290px;
+  position: relative;
+}
+
+.item-info1{
+  margin-top: 10px;
+  color: rgb(96, 91, 91);
+  font-size: 18px;
+}
+.item-info2{
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.item .icon{
+  color: #6e3030;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 27px;
+  right: 0;
+  bottom: 14px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.1;
+}
+.item:hover .icon{
+  visibility: visible;
+  opacity: 1;
+}
+.dis-container{
+  height: 300px;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+}
+.discount{
+  height: 300px;
+  width: 600px;
+  background-color: rgb(245, 234, 214);
+  background-size: cover;
+}
+.quote{
+  font-size: 40px;
+  color: rgb(126, 52, 17);
+}
+.discount-info{
+  margin-left: 35px;
+  margin-top: 22px;
+  font-size: 27px;
+}
+.discount-info3{
+  margin: 25px 70px 10px 35px;
+  font-size: 17px;
+  line-height: 1.7;
+  word-spacing: 2.5px;
+}
+.discount .scroll span{
+  height: 2px;
+  width: 50px;
+  background-color: rgb(113, 51, 7);
+  display: inline-block;
+  margin-left: 15px;
+}
+.discount .scroll{
+  text-align: right;
+  margin-top: 27px;
+  margin-right: 20px;
+}
+.discount-card1{
+  width: 280px;
+  height: 300px;
+  float: left;
+  margin-left: 23px;
+  transition: transform 0.5s;
+  background-image: url(../img/IMG_9165.JPG);
+  background-size: cover;
+}
+.discount-card1:hover{
+  transform: scale(1.1);
+}
+.discount-card2{
+  width: 280px;
+  height: 300px;
+  float: left;
+  margin-left: 24px;
+  transition: transform 0.5s;
+  background-image: url(../img/IMG_9173.JPG);
+  background-size: cover;
+}
+.discount-card2:hover{
+  transform: scale(1.1);
+}
+.discount-item-info1{
+  font-weight: normal;
+  margin: 20px 0px 1px 20px;
+}
+.discount-item-info2{
+  font-size: 20px;
+  margin-left: 20px;
+}
+.service {
+  display:flex;
+  margin-top: 70px;
+}
+.service-item{
+  flex:1;
+  text-align: center;
+  border-right: 1px solid rgb(69, 25, 10);
+}
+.servicee-item{
+  flex:1;
+  text-align: center;
+}
+.service-icon{
+  background-image: url(../img/service-icon.png);
+  height: 55px;
+  background-repeat: no-repeat;
+}
+.service-icon1{
+background-position: center 5px;
+transition: .5s;
+}
+.service-item:hover .service-icon1{
+  background-position: center -86px;
+}
+.service-icon2{
+background-position: center -180px;
+transition: .5s;
+}
+.service-item:hover .service-icon2{
+  background-position: center -273px;
+}
+.service-icon3{
+background-position: center -366px;
+transition: .5s;
+}
+.service-item:hover .service-icon3{
+  background-position: center -455px;
+}
+.service-icon4{
+background-position: center -549px;
+transition: .5s;
+}
+.service-item:hover .service-icon4{
+  background-position: center -639px;
+}
+.service-icon5{
+background-position: center -734px;
+transition: .5s;
+}
+.servicee-item:hover .service-icon5{
+  background-position: center -826px;
+}
+.service-info h3{
+  font-size: 17px;
+}
+.service-info span{
+  color: gray;
+  font-size: 15px;
+}
+.hr{
+  width: 100%;
+  border: .6px solid rgb(165, 164, 164);
+  margin-top: 45px;
+}
+/* ...........................[products]...................... */
+.container2 {
+  width: 80%;
+  height: 125vh;
+  margin: auto;
+  margin-top: 40px;
+}
+.title1{
+  text-align: center;
+}
+.title1:hover .line{
+  width: 130px;
+}
+.list-products{
+  text-align: center;
+  margin: 40px 0px 20px 0px;
+}
+.list{
+  list-style: none;
+  margin: 10px 20px;
+}
+.list a{
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(51, 25, 22);
+}
+.wrapper1{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper2{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper , .single-card {
+	height: 400px;
+	max-width: 400px;
+	margin: 0 auto;
+	position: relative;
+  
+}
+.wrapper {
+	perspective: 900px;
+  height: 490px;
+  margin: 0 auto;
+}
+.single-card {
+	text-align: center;
+	transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+	transform-style: preserve-3d;
+}
+.single-card:hover{
+	transform: rotateY(180deg);
+}
+.front, .back {
+	width: 300px;
+	position: relative;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+}
+.front {
+	cursor: pointer;
+	height: 100%;
+	background-image: url(../img/IMG_9165.JPG);
+	backface-visibility: hidden;
+	border-radius: 50px;
+	background-size: cover;
+	background-position: center center;
+}
+.back {
+	transform: rotateY(180deg);
+	position: absolute;
+	border-radius: 50px;
+	height: 400px;
+	background: rgb(228, 208, 177);
+}
+.content {
+	padding-top: 27%;
+}
+.content h2 {
+	font-size: 35px;
+	margin:-11px 0px;
+	font-weight: 300;
+}
+.content h4 {
+	margin: 0;
+}
+.content p{
+  margin-top: 45px;
+  line-height: 30px;
+}
+.socials {
+	margin-top: 25%;
+}
+.socials i {
+	font-size: 30px;
+	margin: 10px 10px;
+}
+.star{
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(208, 198, 10);
+}
+.price{
+  font-size: 22px;
+  text-align: center;
+  margin-top: 10px;
+}
+.price del{
+  font-size: 20px;
+  color: rgb(66, 67, 68);
+}
